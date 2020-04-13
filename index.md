@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covid19-India-Report</title>
 
-You can use the [editor on GitHub](https://github.com/dineshchadokar125/dineshchadokar125.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+  <!-- Bootstrapping UI5 -->
+  <script id="sap-ui-bootstrap"
+      src="https://sapui5.hana.ondemand.com/1.42.6/resources/sap-ui-core.js"
+      data-sap-ui-libs="sap.m,sap.uxap"
+      data-sap-ui-theme="sap_bluecrystal"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-resourceroots='{"com.sap.dinesh.covid19india.dashboard": "."}'
+      data-sap-ui-frameOptions="trusted">
+  </script>
+  <script>
+    sap.ui.getCore().attachInit(function () {
+      sap.ui.require([
+        "sap/m/Shell",
+        "sap/ui/core/ComponentContainer"
+      ], function (Shell, ComponentContainer) {
+        // initialize the UI component
+        new Shell({
+          app: new ComponentContainer({
+            height : "100%",
+            name : "com.sap.dinesh.covid19india.dashboard"
+          })
+        }).placeAt("content");
+      });
+    });
+  </script>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dineshchadokar125/dineshchadokar125.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</head>
+<!-- UI Content -->
+<body class="sapUiBody" id="content">
+</body>
+</html>
