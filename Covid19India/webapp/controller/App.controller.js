@@ -1,14 +1,1 @@
-sap.ui.define([
-		"com/sap/dinesh/covid19india/dashboard/controller/BaseController"
-	], function (BaseController) {
-		"use strict";
-
-		return BaseController.extend("com.sap.dinesh.covid19india.dashboard.controller.App", {
-
-			onInit : function () {
-				
-			}
-		});
-
-	}
-);
+sap.ui.define(["com/sap/dinesh/covid19india/dashboard/controller/BaseController"],function(n){"use strict";return n.extend("com.sap.dinesh.covid19india.dashboard.controller.App",{onInit:function(){}})});
