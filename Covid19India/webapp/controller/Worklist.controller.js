@@ -13,7 +13,6 @@ sap.ui.define([
 			var oRouter = this.getRouter();
 			oRouter.getRoute("worklist").attachMatched(this._onRouteMatched, this);
 		},
-
 		_onRouteMatched: function() {},
 		onNavBack: function() {
 			var oHistory = History.getInstance(),

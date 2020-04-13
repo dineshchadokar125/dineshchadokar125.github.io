@@ -1,7 +1,7 @@
 <mvc:View controllerName="com.sap.dinesh.covid19india.dashboard.controller.Worklist" xmlns="sap.m" xmlns:semantic="sap.m.semantic"
 	xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:suite="sap.suite.ui.commons"
 	xmlns:l="sap.ui.layout">
-	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showSubHeader="true" showNavButton="true" title="{i18n>worklistViewTitle}">
+	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showSubHeader="true" showNavButton="false" title="{i18n>worklistViewTitle}">
 		<semantic:customHeaderContent>
 			<Image
 				src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5e62546c280007604ccbd27c_iconfinder_virus_disease_health_illness_medical_flu_corona_5859964.png"
@@ -9,9 +9,10 @@
 		</semantic:customHeaderContent>
 		<semantic:content>
 			<l:Grid defaultSpan="L12 M12 S12" class="sapUiResponsiveMargin" vSpacing="0" hSpacing="0">
-				<suite:ChartContainer id="idChartContainer" title="Covid19-India-Report Date Wise" showFullScreen="true" renderComplete="renderComplete">
+				<suite:ChartContainer id="idChartContainer" title="Covid19-India-Report Date Wise" 
+				showFullScreen="true" renderComplete="renderComplete">
 					<suite:ChartContainerContent icon="sap-icon://vertical-bullet-chart" title="Chart View" showFullScreen="true" showPersonalization="false"
-						autoAdjustHeight="false" personalizationPress="attachPersonalizationPress"  >
+						autoAdjustHeight="false" personalizationPress="attachPersonalizationPress">
 						<suite:content>
 							<core:Fragment fragmentName="com.sap.dinesh.covid19india.dashboard.view.VizChart" type="JS"/>
 						</suite:content>
