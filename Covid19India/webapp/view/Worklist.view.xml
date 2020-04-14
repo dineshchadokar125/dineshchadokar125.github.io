@@ -32,10 +32,10 @@
 				</Panel>
 				<VBox height="15px"></VBox>
 				<!--State Wise chart-->
-				<suite:ChartContainer id="idChartContainerStateWise" title="Covid19-India-Report By State" showFullScreen="true" autoAdjustHeight="true"
+				<suite:ChartContainer id="idChartContainerStateWise" title="Covid19-India-Report By State" showFullScreen="true" autoAdjustHeight="false"
 					renderComplete="renderComplete">
 					<suite:ChartContainerContent icon="sap-icon://vertical-bullet-chart" title="Chart View" showFullScreen="true" showPersonalization="false"
-						autoAdjustHeight="true" personalizationPress="attachPersonalizationPress">
+						autoAdjustHeight="false" personalizationPress="attachPersonalizationPress">
 						<suite:content>
 							<core:Fragment fragmentName="com.sap.dinesh.covid19india.dashboard.view.VizChartState" type="JS"/>
 						</suite:content>
