@@ -5,7 +5,7 @@
 		<semantic:customHeaderContent>
 			<Image
 				src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5e62546c280007604ccbd27c_iconfinder_virus_disease_health_illness_medical_flu_corona_5859964.png"
-				width="50px"/>
+				width="40px"/>
 		</semantic:customHeaderContent>
 		<semantic:content>
 			<l:Grid defaultSpan="L12 M12 S12" class="sapUiResponsiveMargin" vSpacing="0" hSpacing="0">
