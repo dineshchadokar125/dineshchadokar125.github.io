@@ -12,9 +12,7 @@
 				<Panel class="sapUiDemoFlexBoxSizeAdjustmentsZeroWidthItems">
 					<FlexBox alignItems="Start">
 						<items>
-							<Button text="Total Confirmed Cases - {/statewise/0/confirmed}" width="100%" 
-							icon=""
-							type="Reject" class="sapUiSmallMarginEnd">
+							<Button text="Total Confirmed Cases - {/statewise/0/confirmed}" width="100%" icon="" type="Reject" class="sapUiSmallMarginEnd">
 								<layoutData>
 									<FlexItemData growFactor="1"/>
 								</layoutData>
@@ -34,10 +32,10 @@
 				</Panel>
 				<VBox height="15px"></VBox>
 				<!--State Wise chart-->
-				<suite:ChartContainer id="idChartContainerStateWise" title="Covid19-India-Report By State" showFullScreen="true"
+				<suite:ChartContainer id="idChartContainerStateWise" title="Covid19-India-Report By State" showFullScreen="true" autoAdjustHeight="true"
 					renderComplete="renderComplete">
 					<suite:ChartContainerContent icon="sap-icon://vertical-bullet-chart" title="Chart View" showFullScreen="true" showPersonalization="false"
-						autoAdjustHeight="false" personalizationPress="attachPersonalizationPress">
+						autoAdjustHeight="true" personalizationPress="attachPersonalizationPress">
 						<suite:content>
 							<core:Fragment fragmentName="com.sap.dinesh.covid19india.dashboard.view.VizChartState" type="JS"/>
 						</suite:content>
@@ -46,25 +44,25 @@
 						<suite:content>
 							<Table items="{/statewise}">
 								<columns>
-									<Column width="100px">
+									<Column width="100px" minScreenWidth="Tablet" demandPopin="true">
 										<Text text="State Code"/>
 									</Column>
-									<Column>
+									<Column  minScreenWidth="Tablet" demandPopin="true">
 										<Text text="State"/>
 									</Column>
 									<Column>
-										<Text text="Active Cases"/>
+										<Text text="Active Cases" minScreenWidth="Tablet" demandPopin="true"/>
 									</Column>
 									<Column>
-										<Text text="Confirmed Cases"/>
+										<Text text="Confirmed Cases" minScreenWidth="Tablet" demandPopin="true"/>
 									</Column>
 									<Column>
-										<Text text="Recovered Cases"/>
+										<Text text="Recovered Cases" minScreenWidth="Tablet" demandPopin="true"/>
 									</Column>
 									<Column>
-										<Text text="Last Updated Time"/>
+										<Text text="Last Updated Time" minScreenWidth="Tablet" demandPopin="true"/>
 									</Column>
-									<Column width="250px">
+									<Column width="250px" minScreenWidth="Tablet" demandPopin="true">
 										<Text text="State Notes"/>
 									</Column>
 								</columns>
@@ -99,22 +97,22 @@
 						<suite:content>
 							<Table items="{/cases_time_series}">
 								<columns>
-									<Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
 										<Text text="Date"/>
 									</Column>
-									<Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
 										<Text text="Daily Confirmed"/>
 									</Column>
-									<Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
 										<Text text="Daily Deceased"/>
 									</Column>
-									<Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
 										<Text text="Daily Recovered"/>
 									</Column>
-									<Column>
+									<Column minScreenWidth="Tablet" demandPopin="true">
 										<Text text="Total Deceased"/>
 									</Column>
-									<Column>
+									<Column  minScreenWidth="Tablet" demandPopin="true">
 										<Text text="Total Recovered"/>
 									</Column>
 								</columns>
