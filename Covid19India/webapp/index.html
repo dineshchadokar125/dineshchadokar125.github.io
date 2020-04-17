@@ -6,8 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Covid19-India-Report</title>
 
+  <!-- Bootstrapping UI5 -->
+  <script id="sap-ui-bootstrap"
+      src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+      data-sap-ui-libs="sap.m,sap.uxap"
+      data-sap-ui-theme="sap_bluecrystal"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-resourceroots='{"com.sap.dinesh.covid19india.dashboard": "."}'
+      data-sap-ui-frameOptions="trusted">
+  </script>
   <script>
-window.open("https://dineshchadoker.com/Covid19India/","_self")
+    sap.ui.getCore().attachInit(function () {
+      sap.ui.require([
+        "sap/m/Shell",
+        "sap/ui/core/ComponentContainer"
+      ], function (Shell, ComponentContainer) {
+        // initialize the UI component
+        new Shell({
+          app: new ComponentContainer({
+            height : "100%",
+            name : "com.sap.dinesh.covid19india.dashboard"
+          })
+        }).placeAt("content");
+      });
+    });
   </script>
 
 </head>
