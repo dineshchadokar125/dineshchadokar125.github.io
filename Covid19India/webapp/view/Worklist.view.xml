@@ -166,8 +166,8 @@
 		</semantic:content>
 		<semantic:customFooterContent>
 			<Button visible="true" icon="sap-icon://map" text="Map" press=".openMap"/>
-			<Button visible="true" icon="sap-icon://pdf-attachment" text="District Report" press=".dIstrictReporting"/>
 			<Button visible="true" icon="sap-icon://chain-link" text="Helpful links" press=".helpfulLinks"/>
+			<Button visible="true" icon="sap-icon://pdf-attachment" text="District Report" press=".dIstrictReporting"/>
 			<Button icon="sap-icon://home" text="Home" tooltip="Home" press="onHome"/>
 		</semantic:customFooterContent>
 	</semantic:FullscreenPage>

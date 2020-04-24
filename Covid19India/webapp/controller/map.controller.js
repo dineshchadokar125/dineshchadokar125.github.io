@@ -8,11 +8,6 @@ sap.ui.define([
 
 	return BaseController.extend("com.sap.dinesh.covid19india.dashboard.controller.map", {
 		onInit: function () {
-			// r oViewModel = this.getView().getModel("appView");
-			// oViewModel.setProperty("/busy", true);
-			var oDeviceModel = new JSONModel(Device);
-			oDeviceModel.setDefaultBindingMode("OneWay");
-			this.getView().setModel(oDeviceModel, "device");
 			var oRouter = this.getRouter();
 			oRouter.getRoute("map").attachMatched(this._onRouteMatched, this);
 		},

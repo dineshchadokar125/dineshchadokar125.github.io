@@ -1,10 +1,8 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns:commons="sap.ui.commons" xmlns="sap.m" xmlns:vbm="sap.ui.vbm"
-	xmlns:l="sap.ui.layout" xmlns:vk="sap.ui.vk" controllerName="com.sap.dinesh.covid19india.dashboard.controller.map" height="100%"
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"  xmlns="sap.m" xmlns:vbm="sap.ui.vbm"
+ xmlns:vk="sap.ui.vk" controllerName="com.sap.dinesh.covid19india.dashboard.controller.map" height="100%"
 	afterRendering="onAfterRendering">
 	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showSubHeader="true" showNavButton="true" title="{i18n>worklistViewTitle}">
 		<semantic:content>
-			<l:FixFlex class="fixFlexFixedSize">
-				<l:flexContent>
 					<vk:MapContainer autoAdjustHeight="true">
 						<vk:content>
 							<vk:ContainerContent icon="sap-icon://geographic-bubble-chart">
@@ -25,8 +23,6 @@
 							</vk:ContainerContent>
 						</vk:content>
 					</vk:MapContainer>
-				</l:flexContent>
-			</l:FixFlex>
 		</semantic:content>
 		<semantic:customFooterContent>
 			<Button visible="true" icon="sap-icon://nav-back" text="Back" press=".onNavBack"/>
