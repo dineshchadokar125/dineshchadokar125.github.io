@@ -1,1 +1,17 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"><Popover title="Helpful links" class="sapUiSmallMargin" placement="Auto" initialFocus="action"><footer><OverflowToolbar><ToolbarSpacer/><Button text="Close" press="handleClosePressed_oPopoverHelpfulLinks"/></OverflowToolbar></footer><VBox class="sapUiSmallMargin"><Link text="HELPLINE Numbers India " target="_blank" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf"/><Link text="Aarogya Setu Mobile App" target="_blank" href="https://www.mygov.in/aarogya-setu-app/"/><Link text="COVID-19 Informaion and Resources " target="_blank" href="https://www.google.com/covid19/#page-top"/><Link text="Ministry of Health and Family Welfare, Gov. of India" target="_blank" href="HTTPS://WWW.MOHFW.GOV.IN/"/><Link text="WHO : COVID-19 Home Page " target="_blank" href="HTTPS://WWW.WHO.INT/EMERGENCIES/DISEASES/NOVEL-CORONAVIRUS-2019"/></VBox></Popover></core:FragmentDefinition>
+<core:FragmentDefinition xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Popover title="Helpful links" class="sapUiSmallMargin" placement="Auto" initialFocus="action">
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="Close" press="handleClosePressed_oPopoverHelpfulLinks"/>
+			</OverflowToolbar>
+		</footer>
+		<VBox class="sapUiSmallMargin">
+			<Link text="HELPLINE Numbers India " target="_blank" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf"/>
+			<Link text="Aarogya Setu Mobile App" target="_blank" href="https://www.mygov.in/aarogya-setu-app/"/>
+			<Link text="COVID-19 Informaion and Resources " target="_blank" href="https://www.google.com/covid19/#page-top"/>
+			<Link text="Ministry of Health and Family Welfare, Gov. of India" target="_blank" href="HTTPS://WWW.MOHFW.GOV.IN/"/>
+			<Link text="WHO : COVID-19 Home Page " target="_blank" href="HTTPS://WWW.WHO.INT/EMERGENCIES/DISEASES/NOVEL-CORONAVIRUS-2019"/>
+		</VBox>
+	</Popover>
+</core:FragmentDefinition>
