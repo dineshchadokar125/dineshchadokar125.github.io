@@ -1,17 +1,1 @@
-{
-	"Spots": [{
-			"pos": "77;20",
-			"tooltip": "India",
-			"type": "Error",
-			"text": "12345"
-
-		}, {
-			"pos": "100;60",
-			"tooltip": "China",
-			"type": "Error",
-			"text": "12345"
-
-		}
-
-	]
-}
+{"Spots":[{"pos":"77;20","tooltip":"India","type":"Error","text":"12345"},{"pos":"100;60","tooltip":"China","type":"Error","text":"12345"}]}
