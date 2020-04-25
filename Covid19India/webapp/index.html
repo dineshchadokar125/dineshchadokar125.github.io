@@ -24,7 +24,11 @@
         "sap/ui/core/ComponentContainer"
       ], function (Shell, ComponentContainer) {
         // initialize the UI component
+    
         new Shell({
+    		homeIcon: {
+			favicon: "images/favicon.ico"
+		},
           app: new ComponentContainer({
             height : "100%",
             name : "com.sap.dinesh.covid19india.dashboard"
