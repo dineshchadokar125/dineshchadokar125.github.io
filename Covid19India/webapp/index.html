@@ -9,7 +9,7 @@
   <!-- Bootstrapping UI5 -->
   <script id="sap-ui-bootstrap"
       src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-      data-sap-ui-libs="sap.m,sap.uxap"
+      data-sap-ui-libs="sap.m,sap.uxap,sap.suite.ui.commons,sap.viz,sap.ui.vbm,sap.ui.vk"
       data-sap-ui-theme="sap_bluecrystal"
       data-sap-ui-compatVersion="edge"
       data-sap-ui-resourceroots='{"com.sap.dinesh.covid19india.dashboard": "."}'
@@ -17,6 +17,10 @@
       data-sap-ui-async="true"
       >
   </script>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  
   <script>
     sap.ui.getCore().attachInit(function () {
       sap.ui.require([
